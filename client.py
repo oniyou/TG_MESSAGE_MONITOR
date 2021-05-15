@@ -3,6 +3,7 @@
 # author: gary
 from telethon import TelegramClient, events, sync
 
+import os
 import httpx
 import time
 import json
@@ -22,7 +23,7 @@ import asyncio
 api_id = 4506196
 api_hash = '093bcb219a7f2fe605fe083ae7decbb7'
 # cookies中间用&分开
-cks = process.env.JD_COOKIE
+cks = os.environ["JD_COOKIE"]
 
 
 async def send_live(cks, url):
