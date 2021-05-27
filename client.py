@@ -15,6 +15,7 @@
 1.复制(https://api.m.jd.com)，带上括号，发送到Telegram，就是发送验证码那个Telegram，或者复制频道里一键领取的信息发送到Telegram
 2.正常会打印"【xxxx;】xxx"，如果ck有问题可以取消121行注释查看ck，取消注释请对齐代码，否则会报错
 """
+import os
 # ========================下面要改===========================
 # 前两个变量请打开https://my.telegram.org，在API development tools里面获取
 api_id = '4506196'
@@ -41,7 +42,7 @@ user_id = ''# tgid
 print('脚本版本：v0.4')
 print('低调使用，请不要传播旧版！！！也不要往群里发信息！！！\n'*3)
 print('如果依赖安装失败请手动安装，或者pip换源之后再安装.报错尝试注释168行')
-import os
+
 count = 3
 while count:
     try:
